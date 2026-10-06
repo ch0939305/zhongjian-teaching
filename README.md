@@ -20,10 +20,10 @@
 ### GitHub Pages
 1. 倉庫 → Settings → Pages
 2. Source 選 `Deploy from a branch`，Branch 選 `main`、資料夾選 `/ (root)`
-3. 儲存後會取得 `https://chyu3600.github.io/<repo-name>/`
+3. 儲存後會取得 `https://chyu3600.github.io/zhongjian-teaching/`
 
 ## 注意
 
 - 影片目前指向 Google Drive 單一檔案 ID `11u0gjebAxf0SZcKHlAtitXSvFN1FTdBm`，
-  共用設定為「受限制」，因此必须用 Drive 原生播放器開啟，內嵌播放會被擋。
+  共用設定為「受限制」，因此必須用 Drive 原生播放器開啟，內嵌播放會被擋。
 - 登入畫面為模擬版（帳號密碼任意值都可進入），真正的存取控管由 Google Drive 權限負責。
