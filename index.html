@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head><style>
+@font-face {
+  font-family: "Optimistic";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Optimistic Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
+}
+:where(html) {
+  font-family: "Optimistic", system-ui, sans-serif;
+}
+:where(code, pre, kbd, samp) {
+  font-family: "Optimistic Mono", ui-monospace, monospace;
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>忠鍵教學網 - 正式版</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Noto Sans TC',sans-serif;background:#f8fafc;color:#1e293b}
+.header{background:#0f172a;color:white;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:20px;letter-spacing:1px}
+.badge{background:#1e40af;padding:4px 10px;border-radius:20px;font-size:12px}
+.container{max-width:980px;margin:0 auto;padding:20px}
+.card{background:white;border-radius:16px;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,0.06);margin-bottom:20px}
+.h1{font-size:22px;font-weight:800;margin:0 0 6px}
+.sub{color:#64748b;font-size:14px}
+.btn-primary{display:block;width:100%;background:#2563eb;color:white;text-align:center;padding:18px;border-radius:12px;font-weight:800;font-size:18px;text-decoration:none;margin:16px 0;box-shadow:0 8px 20px rgba(37,99,235,0.3)}
+.btn-secondary{display:block;width:100%;background:#f1f5f9;color:#334155;text-align:center;padding:14px;border-radius:12px;font-weight:600;text-decoration:none;border:1px solid #e2e8f0}
+.grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:768px){.grid{grid-template-columns:1fr 1fr}}
+.video-card{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden}
+.video-top{background:#0f172a;color:white;padding:12px 16px;font-size:14px;display:flex;justify-content:space-between}
+.video-body{padding:16px}
+.tag{display:inline-block;background:#dbeafe;color:#1e40af;padding:2px 8px;border-radius:6px;font-size:12px;margin-right:6px}
+.alert{background:#fffbeb;border:1px solid #fde68a;padding:12px 14px;border-radius:10px;font-size:13px;color:#92400e;line-height:1.6}
+.login-screen{position:fixed;inset:0;background:linear-gradient(135deg,#0f172a 0%,#1e40af 100%);display:flex;align-items:center;justify-content:center;z-index:99;transition:opacity .4s}
+.login-box{background:white;border-radius:20px;padding:32px 28px;width:92%;max-width:360px;text-align:center}
+.login-box h2{margin:0 0 8px;font-size:22px}
+.login-input{width:100%;padding:12px 14px;border:1px solid #e2e8f0;border-radius:10px;margin:8px 0;font-size:15px;background:#f8fafc}
+</style>
+</head>
+<body>
+<div id="login" class="login-screen">
+  <div class="login-box">
+    <div style="font-size:40px">🔐</div>
+    <h2>忠鍵教學網</h2>
+    <div style="color:#64748b;font-size:13px;margin-bottom:16px">公司內部教學平台 - 模擬登入版 (A方案)</div>
+    <input class="login-input" placeholder="帳號 (任意填寫即可)" value="學員">
+    <input class="login-input" type="password" placeholder="密碼 (任意填寫即可)" value="1234">
+    <a href="#" onclick="document.getElementById('login').style.opacity='0';setTimeout(()=>document.getElementById('login').style.display='none',400);return false;" class="btn-primary" style="margin-top:16px">進入教學網</a>
+    <div style="font-size:11px;color:#94a3b8;margin-top:12px">* 模擬登入，真正安全由 Google Drive「受限制」控管</div>
+  </div>
+</div>
+
+<div class="header">
+  <div class="logo">忠鍵教學網</div>
+  <div class="badge">正式版 v2.1 • Vercel</div>
+</div>
+
+<div class="container">
+  <div class="card">
+    <div class="h1">歡迎回來，陳裕仁</div>
+    <div class="sub">擁有者: futn68733779@gmail.com • 資料夾: 忠鍵教學網_公司共用 • 1 部影片已同步 • 儲存: 個人帳號永久保存</div>
+  </div>
+
+  <div class="card">
+    <div class="h1">📚 第一堂：你的正式影片</div>
+    <div class="alert">💡 <b>為什麼要點大按鈕？</b> 因為你設定了「受限制」，Google 為了安全會擋住內嵌播放。點下方大藍色按鈕會用 Google Drive 原生播放器，保證能播。</div>
+    
+    <a class="btn-primary" href="https://drive.google.com/file/d/11u0gjebAxf0SZcKHlAtitXSvFN1FTdBm/view?usp=sharing" target="_blank">▶️ 在 Google Drive 中播放（保證能播）</a>
+    <a class="btn-secondary" href="https://drive.google.com/file/d/11u0gjebAxf0SZcKHlAtitXSvFN1FTdBm/preview" target="_blank">在教學網內試播 (可能被擋)</a>
+
+    <div style="margin-top:16px">
+      <span class="tag">ID: 11u0gjebAxf0SZcKHlAtitXSvFN1FTdBm</span>
+      <span class="tag">Excel 可加入</span>
+      <span class="tag">受限制安全控管</span>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div style="font-weight:700;margin-bottom:8px">📂 建議資料夾結構</div>
+      <div style="font-family:monospace;font-size:13px;line-height:1.8;background:#f8fafc;padding:12px;border-radius:8px">
+        忠鍵教學網_公司共用<br>
+        ├── 01_影片教材<br>
+        ├── 02_表單文件 (Excel放這)<br>
+        ├── 03_測驗與證書<br>
+        └── 00_已下架
+      </div>
+    </div>
+    <div class="card">
+      <div style="font-weight:700;margin-bottom:8px">🚀 Vercel 部署完成後</div>
+      <div style="font-size:13px;line-height:1.7;color:#475569">
+        1. 你會有永久網址: https://xxx.vercel.app<br>
+        2. 永遠不會再出現 URL signature mismatch<br>
+        3. 加影片只要去 Drive 丟檔案，這個網站會自動讀取<br>
+        4. Excel 也能直接加在 02_表單文件
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="font-weight:700">如何部署到 Vercel？（30秒）</div>
+    <div style="font-size:13px;color:#475569;margin-top:8px;line-height:1.8">
+      方法一 (最快): 到 vercel.com > Add New Project > 上傳這個資料夾<br>
+      方法二: 把這個資料夾推到 GitHub，再用 Vercel 匯入<br>
+      這個專案是純靜態，不用設定任何環境變數，直接 Deploy 就好。
+    </div>
+  </div>
+</div>
+</body>
+</html>
